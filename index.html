@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды Бота</title>
+    <style>
+        /* Общие стили для всей страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; /* Чёрный фон */
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 10px;
+            user-select: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffca28;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #2c2c2c;
+            border-left: 5px solid #ff6b6b;
+            margin-bottom: 10px;
+            padding: 15px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideIn 0.5s forwards;
+        }
+
+        ul li:hover {
+            background-color: #3b3b3b;
+            border-color: #ffca28;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Команды Бота</h1>
+        <ul>
+            <li style="animation-delay: 0.2s;">🚫 /ban — Забанить пользователя</li>
+            <li style="animation-delay: 0.4s;">✔️ /unban — Разбанить пользователя</li>
+            <li style="animation-delay: 0.6s;">🔕 /mute — Заглушить пользователя</li>
+            <li style="animation-delay: 0.8s;">🔔 /unmute — Размутить пользователя</li>
+            <li style="animation-delay: 1.0s;">⏹️ /stop — Остановить бота</li>
+            <li style="animation-delay: 1.2s;">💬 /q — Создать цитату из сообщения</li>
+            <li style="animation-delay: 1.4s;">⚡ /begin — Начать отсчёт воздержания</li>
+            <li style="animation-delay: 1.6s;">❗ /sliv — Зафиксировать рецидив</li>
+            <li style="animation-delay: 1.8s;">🏅 /top — Топ участников по воздержанию</li>
+            <li style="animation-delay: 2.0s;">📖 /wiki — Искать информацию в Википедии</li>
+            <li style="animation-delay: 2.2s;">📜 /cm — Показать доступные команды</li>
+        </ul>
+        <footer>
+            Бот для управления пользователями и взаимодействия в группе.
+        </footer>
+    </div>
+
+</body>
+</html>
